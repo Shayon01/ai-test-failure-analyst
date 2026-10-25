@@ -1,64 +1,290 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shayon Shandilya — Business Analyst &amp; Product Builder</title>
+  <meta name="description" content="Shayon Shandilya is a Business Analyst and aspiring Product Manager building digital products at the intersection of business, technology and AI.">
+  <meta name="author" content="Shayon Shandilya">
+  <meta name="theme-color" content="#0a0a0c">
+  <link rel="canonical" href="https://creative-croissant-6d90f8.netlify.app/">
 
-```
-<title>AI Test Failure Analyst</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shayon Shandilya">
+  <meta property="og:title" content="Shayon Shandilya — Business Analyst &amp; Product Builder">
+  <meta property="og:description" content="Building digital products at the intersection of business, technology and AI.">
+  <meta property="og:url" content="https://creative-croissant-6d90f8.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shayon Shandilya — Business Analyst &amp; Product Builder">
+  <meta name="twitter:description" content="Building digital products at the intersection of business, technology and AI.">
 
-<link rel="stylesheet" href="style.css">
-```
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add("js")</script>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shayon Shandilya",
+    "jobTitle": "Business Analyst",
+    "url": "https://creative-croissant-6d90f8.netlify.app/",
+    "sameAs": ["https://github.com/Shayon01"]
+  }
+  </script>
+
+  <script src="/assets/js/content.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-```
-<header>
-    <h1>AI Test Failure Analyst</h1>
-    <p>Understand test failures. Find the next step.</p>
-</header>
+  <!-- Navigation -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a class="wordmark" href="#home" aria-label="Shayon Shandilya — home">
+        <span class="wordmark__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22"><rect x="1" y="1" width="22" height="22" rx="6" fill="none" stroke="currentColor" stroke-opacity=".35"/><path d="M15.5 8.2c-.7-.9-1.9-1.4-3.3-1.4-2 0-3.4 1-3.4 2.5 0 3.4 7 1.9 7 5.2 0 1.6-1.5 2.7-3.6 2.7-1.6 0-2.9-.6-3.7-1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span class="wordmark__text">Shayon Shandilya</span>
+      </a>
 
-<main>
-    <section class="input-card">
-        <h2>Analyze a test failure</h2>
+      <nav class="nav__links" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-        <p>
-            Paste an automated test error or log below.
-            We'll help you investigate the possible cause.
-        </p>
+      <div class="nav__actions">
+        <a class="btn btn--primary btn--sm" data-link="resume" href="#contact">View Resume</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
 
-        <label for="errorInput">Error message or test log</label>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary" data-link="resume" href="#contact">View Resume</a>
+      </nav>
+    </div>
+  </header>
 
-        <textarea
-            id="errorInput"
-            placeholder="Example: Timeout waiting for payment confirmation..."
-        ></textarea>
-
-        <button id="analyzeButton">Analyze failure</button>
-
-        <p class="disclaimer">
-            Prototype: initial diagnoses will use predefined rules,
-            not a live AI model.
-        </p>
-    </section>
-
-    <section class="results-card" id="resultsCard">
-        <h2>Diagnosis</h2>
-
-        <div id="results">
-            <p class="empty-state">
-                Your analysis will appear here.
-            </p>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> Business Analyst · Product · AI</p>
+          <h1 class="hero__title reveal" id="hero-title">
+            Building digital products at the intersection of business, technology <span class="serif">&amp;&nbsp;AI.</span>
+          </h1>
+          <p class="hero__lede reveal">
+            I'm Shayon Shandilya, a Business Analyst and product-focused professional interested in transforming complex problems into useful, scalable digital experiences.
+          </p>
+          <div class="hero__cta reveal">
+            <a class="btn btn--primary" href="#projects">Explore My Work
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Let's Connect</a>
+          </div>
         </div>
-    </section>
-</main>
 
-<footer>
-    <p>Built as an AI Product Management learning project.</p>
-</footer>
-```
-<script src="script.js"></script>
+        <!-- Abstract product interface -->
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="spec">
+            <div class="spec__bar">
+              <span></span><span></span><span></span>
+              <p class="spec__path mono">product / payment-journey.spec</p>
+            </div>
+            <div class="spec__body">
+              <aside class="spec__side">
+                <p class="spec__label mono">Stages</p>
+                <ul>
+                  <li class="is-done">Discover</li>
+                  <li class="is-done">Define</li>
+                  <li class="is-active">Design</li>
+                  <li>Build</li>
+                  <li>Validate</li>
+                </ul>
+              </aside>
+              <div class="spec__main">
+                <p class="spec__label mono">User journey</p>
+                <div class="journey">
+                  <div class="journey__node">Need</div>
+                  <div class="journey__line"></div>
+                  <div class="journey__node">Requirement</div>
+                  <div class="journey__line"></div>
+                  <div class="journey__node journey__node--accent">Feature</div>
+                </div>
+                <p class="spec__label mono">Requirements</p>
+                <div class="req">
+                  <div class="req__row"><span class="req__tag mono">FR-01</span><span class="req__line" style="--w:78%"></span><span class="req__check"></span></div>
+                  <div class="req__row"><span class="req__tag mono">FR-02</span><span class="req__line" style="--w:62%"></span><span class="req__check"></span></div>
+                  <div class="req__row"><span class="req__tag mono">FR-03</span><span class="req__line" style="--w:70%"></span><span class="req__check req__check--open"></span></div>
+                </div>
+                <div class="spec__api mono">
+                  <span class="k">POST</span> /payments/intent <span class="arrow">→</span> <span class="ok">callback</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__orbit"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="section__head reveal">
+          <p class="section__index mono">01 — About</p>
+          <h2 class="section__title" id="about-title">Business understanding, <span class="serif">technical curiosity,</span> product execution.</h2>
+        </div>
+        <div class="about__body">
+          <div class="about__text reveal">
+            <p>
+              I'm a Business Analyst working on digital payment products, where my work sits between the people who need a product and the teams who build it. I spend my days understanding customer and merchant problems, translating business needs into clear requirements, and working closely with engineering teams to bring features from concept to implementation.
+            </p>
+            <p>
+              My path into product started with a foundation in Computer Science and grew through an MBA in Artificial Intelligence &amp; Data Science. Today I'm focused on Product Management and AI-enabled product development — exploring how data and generative AI can make products more useful, not just more complex.
+            </p>
+            <p>
+              I care about structured thinking, clear documentation, and asking the right questions early — so that what gets built genuinely solves the problem it was meant to.
+            </p>
+          </div>
+          <ul class="principles reveal" aria-label="How I work">
+            <li>
+              <span class="principles__num mono">A</span>
+              <div><h3>Start with the problem</h3><p>Understand users, merchants, and business context before defining solutions.</p></div>
+            </li>
+            <li>
+              <span class="principles__num mono">B</span>
+              <div><h3>Make it unambiguous</h3><p>Turn needs into journeys, requirements, and documentation teams can build from.</p></div>
+            </li>
+            <li>
+              <span class="principles__num mono">C</span>
+              <div><h3>Build alongside engineering</h3><p>Analyse API flows, coordinate across functions, and validate through UAT.</p></div>
+            </li>
+            <li>
+              <span class="principles__num mono">D</span>
+              <div><h3>Explore with AI and data</h3><p>Prototype AI-enabled tools and use analytics to inform product thinking.</p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__index mono">02 — Experience</p>
+          <h2 class="section__title" id="experience-title">Where I've been <span class="serif">working.</span></h2>
+        </div>
+        <ol class="timeline" data-render="experience"></ol>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <p class="section__index mono">03 — Projects</p>
+            <h2 class="section__title" id="projects-title">Selected <span class="serif">work.</span></h2>
+          </div>
+          <p class="section__note">Product initiatives, AI tools, and analytics projects — from concept to working prototype.</p>
+        </div>
+        <div class="projects" data-render="projects"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section__head section__head--split reveal">
+          <div>
+            <p class="section__index mono">04 — Skills</p>
+            <h2 class="section__title" id="skills-title">The <span class="serif">toolkit.</span></h2>
+          </div>
+          <p class="section__note">Areas I work in and continue to develop — grouped by discipline rather than ranked by self-assessed proficiency.</p>
+        </div>
+        <div class="skills" data-render="skills"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__index mono">05 — Education</p>
+          <h2 class="section__title" id="education-title">Academic <span class="serif">foundation.</span></h2>
+        </div>
+        <div class="education" data-render="education"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact__card reveal">
+          <div class="contact__glow" aria-hidden="true"></div>
+          <p class="section__index mono">06 — Contact</p>
+          <h2 class="contact__title" id="contact-title">Have a problem worth solving? <span class="serif">Let's talk.</span></h2>
+          <p class="contact__lede">
+            I'm always interested in meaningful conversations about digital products, technology, AI, and opportunities to build better user experiences.
+          </p>
+          <ul class="contact__links" data-render="contact"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Shayon Shandilya</p>
+        <p class="footer__tag">Business Analyst building digital products across business, technology &amp; AI.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="footer__social" data-render="social" aria-label="Social links"></ul>
+    </div>
+    <div class="container footer__base">
+      <p>&copy; <span data-year>2026</span> Shayon Shandilya</p>
+      <a href="#home" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
 </body>
 </html>

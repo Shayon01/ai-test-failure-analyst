@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Test Failure Analyst</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>AI Test Failure Analyst</h1>
+    <p>Understand test failures. Find the next step.</p>
+</header>
+
+<main>
+    <section class="input-card">
+        <h2>Analyze a test failure</h2>
+
+        <p>
+            Paste an automated test error or log below.
+            We'll help you investigate the possible cause.
+        </p>
+
+        <label for="errorInput">Error message or test log</label>
+
+        <textarea
+            id="errorInput"
+            placeholder="Example: Timeout waiting for payment confirmation..."
+        ></textarea>
+
+        <button id="analyzeButton">Analyze failure</button>
+
+        <p class="disclaimer">
+            Prototype: initial diagnoses will use predefined rules,
+            not a live AI model.
+        </p>
+    </section>
+
+    <section class="results-card" id="resultsCard">
+        <h2>Diagnosis</h2>
+
+        <div id="results">
+            <p class="empty-state">
+                Your analysis will appear here.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Built as an AI Product Management learning project.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
