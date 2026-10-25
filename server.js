@@ -8,7 +8,8 @@ const app = express();
 const PORT = 3001;
 
 app.use(express.json({ limit: "100kb" }));
-app.use(express.static(__dirname));
+const APP_DIR = path.join(__dirname, "ai-test-failure-analyst");
+app.use(express.static(APP_DIR));
 
 const ai = new GoogleGenAI({
     apiKey: process.env.GEMINI_API_KEY
@@ -16,7 +17,7 @@ const ai = new GoogleGenAI({
 
 // Homepage
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(APP_DIR, "index.html"));
 });
 
 // Health check
