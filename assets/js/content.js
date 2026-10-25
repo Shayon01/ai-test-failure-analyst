@@ -10,10 +10,10 @@ window.SITE = {
   tagline: "Business Analyst · Product · AI",
 
   links: {
-    resume: null, // e.g. "/resume.pdf" — add the PDF to the repo root
-    linkedin: null, // e.g. "https://www.linkedin.com/in/your-handle"
+    resume: "/resume.pdf", // place resume.pdf in the repo root
+    linkedin: "https://www.linkedin.com/in/shayonshandilya",
     github: "https://github.com/Shayon01",
-    email: null, // e.g. "you@example.com"
+    email: "shayonshandilya@gmail.com",
   },
 
   // Newest first. Add a new object to the top as your career progresses.
